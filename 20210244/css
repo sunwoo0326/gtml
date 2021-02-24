@@ -1,0 +1,10 @@
+/* class > type*/
+
+.color {
+  color: red;
+}
+
+
+h3 {
+  color:green;
+}
