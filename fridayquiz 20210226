@@ -1,0 +1,194 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPN1gt7CSncXfuWUyyrXz2F",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sunwoo0326/html/blob/main/fridayquiz%2020210226\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gG2pewl9-KUu",
+        "outputId": "de6cc2cc-0839-45d1-980b-7fde8957b66f"
+      },
+      "source": [
+        "#q37\r\n",
+        "a = input().split()\r\n",
+        "b = list(set(a))\r\n",
+        "\r\n",
+        "max = 0\r\n",
+        "\r\n",
+        "for i in range(len(b)):\r\n",
+        "  if a.count(b[i]) > a.count(b[max]):\r\n",
+        "    max = i\r\n",
+        "\r\n",
+        "print(\"%s(이)가 총 %d표로 반장이 되었습니다.\"% (b[max], a.count(b[max])))\r\n"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "원영 원영 은비 은비 은비 채연 채연\n",
+            "은비(이)가 총 3표로 반장이 되었습니다.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mPSV7eYu-LFX",
+        "outputId": "b7792967-1dfc-4229-f190-8fa2fcb117f5"
+      },
+      "source": [
+        "#q38            \r\n",
+        "\r\n",
+        "a=input()\r\n",
+        "print(a.replace('q','e'))"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "la viq qn rosq\n",
+            "la vie en rose\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UCkXCgv3EAD7",
+        "outputId": "18fa5613-ee32-49ea-fc7e-a868099cea03"
+      },
+      "source": [
+        "#q41\r\n",
+        "a = int(input())\r\n",
+        "\r\n",
+        "re = 0\r\n",
+        "\r\n",
+        "for i in range(1, a+1):\r\n",
+        "  if a % i ==0:\r\n",
+        "    re += 1\r\n",
+        "\r\n",
+        "if re == 2:\r\n",
+        "  print('YES')\r\n",
+        "else:\r\n",
+        "  print('NO')"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "11\n",
+            "YES\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TPXPPdjGQXVt",
+        "outputId": "0ce687db-f49b-4c72-b361-8cd06dd1bbf0"
+      },
+      "source": [
+        "#q44\r\n",
+        "n = list(map(int,input()))\r\n",
+        "sum = 0\r\n",
+        "for i in n:\r\n",
+        "  sum += i\r\n",
+        "\r\n",
+        "print(sum)"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "1234\n",
+            "10\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ixrwgb_pUGz3",
+        "outputId": "ff8a1f58-3904-4240-8770-f7b57b3f2f81"
+      },
+      "source": [
+        "#q46\r\n",
+        "sum = 0\r\n",
+        "for i in list(range(21)):\r\n",
+        "  for j in str(i):\r\n",
+        "    sum += int(j)\r\n",
+        "print(sum)"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "102\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "gu0zW9XuY_b3"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
